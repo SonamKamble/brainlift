@@ -1,1 +1,42 @@
-@import "tailwindcss";
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #faf5ff, #eef2ff);
+}
+
+.app-header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.app-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.app-main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-container {
+    background: linear-gradient(to bottom right, #111827, #1f2937);
+  }
+
+  .app-title {
+    color: #ffffff;
+  }
+
+  .app-subtitle {
+    color: #d1d5db;
+  }
+}

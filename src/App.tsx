@@ -1,16 +1,27 @@
+import { useState } from 'react';
+import SearchBar from './components/SearchBar';
+import './App.css';
+
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSearch = (topic: string) => {
+    setIsLoading(true);
+    console.log('Searching for:', topic);
+    // TODO: Wire up OpenAI service in step 6
+    setTimeout(() => setIsLoading(false), 1000);
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
-      <header className="py-8 text-center">
-        <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
-          BrainLift
-        </h1>
-        <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+    <div className="app-container">
+      <header className="app-header">
+        <h1 className="app-title">BrainLift</h1>
+        <p className="app-subtitle">
           Understand anything — from age 5 to expert
         </p>
       </header>
-      <main className="mx-auto max-w-4xl px-4">
-        {/* SearchBar and ExplanationCards will go here */}
+      <main className="app-main">
+        <SearchBar onSearch={handleSearch} isLoading={isLoading} />
       </main>
     </div>
   );
