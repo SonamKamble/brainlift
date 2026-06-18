@@ -24,7 +24,19 @@
 .app-main {
   max-width: 42rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem 3rem;
+}
+
+.results-container {
+  margin-top: 2rem;
+}
+
+.results-topic {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1.25rem;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,5 +50,9 @@
 
   .app-subtitle {
     color: #d1d5db;
+  }
+
+  .results-topic {
+    color: #ffffff;
   }
 }
