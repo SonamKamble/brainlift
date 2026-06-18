@@ -1,0 +1,60 @@
+.analogy-card {
+  background: linear-gradient(135deg, #fefce8, #fef9c3);
+  border: 1px solid #fde68a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.analogy-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.analogy-icon {
+  font-size: 1.25rem;
+}
+
+.analogy-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #92400e;
+  margin: 0;
+}
+
+.analogy-text {
+  color: #78350f;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+  font-style: italic;
+}
+
+.analogy-explanation {
+  color: #a16207;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .analogy-card {
+    background: linear-gradient(135deg, #422006, #451a03);
+    border-color: #92400e;
+  }
+
+  .analogy-title {
+    color: #fcd34d;
+  }
+
+  .analogy-text {
+    color: #fde68a;
+  }
+
+  .analogy-explanation {
+    color: #fbbf24;
+  }
+}

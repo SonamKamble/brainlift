@@ -3,6 +3,10 @@ import SearchBar from './components/SearchBar';
 import ExplanationCard from './components/ExplanationCard';
 import LoadingSkeleton from './components/LoadingSkeleton';
 import ErrorMessage from './components/ErrorMessage';
+import AnalogyCard from './components/AnalogyCard';
+import RealLifeExamples from './components/RealLifeExamples';
+import QuizSection from './components/QuizSection';
+import MermaidDiagram from './components/MermaidDiagram';
 import { getExplanations } from './services/openai';
 import type { ExplanationResponse } from './types';
 import './App.css';
@@ -62,6 +66,10 @@ function App() {
             {result.explanations.map((exp) => (
               <ExplanationCard key={exp.level} explanation={exp} />
             ))}
+            {result.analogy && <AnalogyCard analogy={result.analogy} />}
+            {result.realLifeExamples?.length > 0 && <RealLifeExamples examples={result.realLifeExamples} />}
+            {result.quiz?.length > 0 && <QuizSection questions={result.quiz} />}
+            {result.mermaidDiagram && <MermaidDiagram chart={result.mermaidDiagram} />}
           </div>
         )}
       </main>

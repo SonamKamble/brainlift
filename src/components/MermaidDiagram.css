@@ -1,0 +1,48 @@
+.mermaid-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mermaid-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mermaid-icon {
+  font-size: 1.25rem;
+}
+
+.mermaid-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+.mermaid-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mermaid-card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .mermaid-title {
+    color: #f3f4f6;
+  }
+}
