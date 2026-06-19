@@ -1,0 +1,166 @@
+.apikey-box {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.apikey-label {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.apikey-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.apikey-input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: #111827;
+}
+
+.apikey-input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+}
+
+.apikey-save {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #9333ea;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.apikey-save:hover {
+  background: #7e22ce;
+}
+
+.apikey-save:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.apikey-hint {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.apikey-hint a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.apikey-hint a:hover {
+  text-decoration: underline;
+}
+
+.apikey-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 1rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.apikey-status {
+  color: #166534;
+  font-weight: 500;
+}
+
+.apikey-change,
+.apikey-clear {
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.apikey-change {
+  color: #2563eb;
+}
+
+.apikey-change:hover {
+  background: #eff6ff;
+}
+
+.apikey-clear {
+  color: #dc2626;
+}
+
+.apikey-clear:hover {
+  background: #fef2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .apikey-box {
+    background: #1e293b;
+    border-color: #475569;
+  }
+
+  .apikey-label {
+    color: #94a3b8;
+  }
+
+  .apikey-input {
+    background: #0f172a;
+    border-color: #475569;
+    color: #f1f5f9;
+  }
+
+  .apikey-hint {
+    color: #64748b;
+  }
+
+  .apikey-hint a {
+    color: #a78bfa;
+  }
+
+  .apikey-bar {
+    background: #052e16;
+    border-color: #166534;
+  }
+
+  .apikey-status {
+    color: #86efac;
+  }
+
+  .apikey-change {
+    color: #93c5fd;
+  }
+
+  .apikey-change:hover {
+    background: #1e3a5f;
+  }
+
+  .apikey-clear {
+    color: #fca5a5;
+  }
+
+  .apikey-clear:hover {
+    background: #451a1a;
+  }
+}
