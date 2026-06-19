@@ -6,7 +6,7 @@ BrainLift is an AI-powered learning app that explains any topic at multiple leve
 
 ## Demo
 
-<video src="assets/demo.mov" controls width="100%"></video>
+https://github.com/user-attachments/assets/f00c6a26-b577-4c93-970b-8cdb146c3a00
 
 ## Features
 
