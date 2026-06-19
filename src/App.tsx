@@ -54,22 +54,25 @@ function App() {
         </p>
       </header>
       <main className="app-main">
-        <SearchBar onSearch={handleSearch} isLoading={isLoading} />
-
-        {error && <ErrorMessage message={error} onRetry={handleRetry} />}
+        <div className="search-wrapper">
+          <SearchBar onSearch={handleSearch} isLoading={isLoading} />
+          {error && <ErrorMessage message={error} onRetry={handleRetry} />}
+        </div>
 
         {isLoading && <LoadingSkeleton />}
 
         {result && (
           <div className="results-container">
             <h2 className="results-topic">{result.topic}</h2>
-            {result.explanations.map((exp) => (
-              <ExplanationCard key={exp.level} explanation={exp} />
-            ))}
-            {result.analogy && <AnalogyCard analogy={result.analogy} />}
-            {result.realLifeExamples?.length > 0 && <RealLifeExamples examples={result.realLifeExamples} />}
-            {result.quiz?.length > 0 && <QuizSection questions={result.quiz} />}
-            {result.mermaidDiagram && <MermaidDiagram chart={result.mermaidDiagram} />}
+            <div className="grid-2col">
+              {result.explanations.map((exp) => (
+                <ExplanationCard key={exp.level} explanation={exp} />
+              ))}
+              {result.analogy && <AnalogyCard analogy={result.analogy} />}
+              {result.realLifeExamples?.length > 0 && <RealLifeExamples examples={result.realLifeExamples} />}
+              {result.quiz?.length > 0 && <QuizSection questions={result.quiz} />}
+              {result.mermaidDiagram && <MermaidDiagram chart={result.mermaidDiagram} />}
+            </div>
           </div>
         )}
       </main>
